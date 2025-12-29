@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* "Cinematic" Dark Mode: Pure Black background, Neutral text */
+    @apply bg-slate-50 text-slate-900 dark:bg-black dark:text-neutral-300 antialiased transition-colors duration-300;
+  }
+}
+
+.glass-panel {
+  /* Light Mode */
+  @apply bg-white border border-slate-200 shadow-xl rounded-2xl;
+
+  /* Dark Mode: "Netflix-style" - Dark Neutral panel with subtle border */
+  @apply dark:bg-zinc-900/80 dark:border-white/10 dark:backdrop-blur-xl dark:shadow-2xl dark:shadow-black/50;
+}
