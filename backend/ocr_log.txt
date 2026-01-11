@@ -1153,3 +1153,475 @@ GUNAGANTI MAHESH
 
 CLEANED TEXT PREVIEW: thecertificateisawardedtoforsuccessfullycompletingthecoursedatabasemanagementsystempart-1onjanuary28,2025issuedon:tuesday,january28,2025toverify,scantheqrcodeathttps://verify.onwingspan.comgunagantima...
 --- LOG END ---
+
+
+====================
+--- LOG START: ID Card.jpg (2026-01-11 20:05:49.230197) ---
+FULL TEXT:
+1
+|
+|
+2023-27 DOB
+B.TECH |
+LT —
+_—
+23P61A12C4
+VENGALA AKHILAN
+E/NAME : VENKATESHWARLU
+CELL NO :9848454044
+| : AARON AO | Principal —
+
+CLEANED TEXT PREVIEW: 1||2023-27dobb.tech|lt—_—23p61a12c4vengalaakhilane/name:venkateshwarlucellno:9848454044|:aaronao|principal—...
+--- LOG END ---
+
+
+====================
+--- LOG START: Data Base Management System.pdf (2026-01-11 20:06:18.597255) ---
+FULL TEXT:
+No. of credits recommended: 2 or 3
+To verify the certificate
+Roll No:
+Jul-Sep 2025
+(8 week course)
+Data Base Management System
+VENGALA AKHILAN
+19.17/25
+42/75
+61
+7186
+NPTEL25CS145S537003842
+
+CLEANED TEXT PREVIEW: no.ofcreditsrecommended:2or3toverifythecertificaterollno:jul-sep2025(8weekcourse)databasemanagementsystemvengalaakhilan19.17/2542/75617186nptel25cs145s537003842...
+--- LOG END ---
+
+
+====================
+--- LOG START: DBMS Certificate.pdf (2026-01-11 20:07:46.593001) ---
+FULL TEXT:
+VENGALA AKHILAN
+Database Management System Part - 1
+The certificate is awarded to
+for successfully completing the course
+on April 28, 2025
+Issued on: Monday, April 28, 2025
+To verify, scan the QR code at https://verify.onwingspan.com
+
+CLEANED TEXT PREVIEW: vengalaakhilandatabasemanagementsystempart-1thecertificateisawardedtoforsuccessfullycompletingthecourseonapril28,2025issuedon:monday,april28,2025toverify,scantheqrcodeathttps://verify.onwingspan.com...
+--- LOG END ---
+
+
+====================
+--- LOG START: 23P61A12C4.pdf (2026-01-11 20:08:06.547208) ---
+FULL TEXT:
+This certificate is awarded to
+Akhilan Vengala
+for successfully completing
+C Essentials 1
+offered by Vignana Bharathi Institute of Technology
+through the Cisco Networking Academy program.
+Indira Priyadarshini Nethala
+Instructor
+Vignana Bharathi Institute of Technology
+01 Oct 2024
+Completion Date
+
+CLEANED TEXT PREVIEW: thiscertificateisawardedtoakhilanvengalaforsuccessfullycompletingcessentials1offeredbyvignanabharathiinstituteoftechnologythroughthecisconetworkingacademyprogram.indirapriyadarshininethalainstructorvi...
+--- LOG END ---
+
+
+====================
+--- LOG START: 23P61A12C4_IoT.pdf (2026-01-11 20:08:29.789231) ---
+FULL TEXT:
+VENGALA AKHILAN
+Internet of Things 101
+The certificate is awarded to
+for successfully completing the course
+on September 16, 2024
+Issued on: Monday, September 16, 2024
+To verify, scan the QR code at https://verify.onwingspan.com
+
+CLEANED TEXT PREVIEW: vengalaakhilaninternetofthings101thecertificateisawardedtoforsuccessfullycompletingthecourseonseptember16,2024issuedon:monday,september16,2024toverify,scantheqrcodeathttps://verify.onwingspan.com...
+--- LOG END ---
+
+
+====================
+--- LOG START: 23P61A12C4_python_programming_mid1_PRA.pdf (2026-01-11 20:08:44.703317) ---
+FULL TEXT:
+28/03/2024, 19:45
+Grades: View
+https://lms.netacad.com/grade/report/user/index.php?id=2230746
+1/2
+Home / I'm Learning / PCAP - Programming Essentials in Python / Grades / Grade administration / User report
+NetAcad, a Cisco Corporate Social Responsibility program, is an IT skills and career building program available to learning institutions and individuals worldwide.
+Terms and Conditions
+Privacy Statement
+Cookie Policy
+PCAP - Programming Essentials in Python: View: User report
+User report - AKHILAN VENGALA
+Grade item
+Percentage
+Feedback
+PCAP - Programming Essentials in Python
+T&C and Welcome Survey
+Terms and Conditions [ACCEPT TO START THE COURSE]
+100.00 %
+ 
+T&C and Welcome Survey total
+ 
+Python Essentials 1
+Module 1 Test
+100.00 %
+ 
+Module 2 Test
+100.00 %
+ 
+Module 3 Test
+90.00 %
+ 
+Module 4 Test
+100.00 %
+ 
+Part 1 Summary Test
+97.00 %
+ 
+Python Essentials 1 total
+97.30 %
+ 
+Python Essentials 2
+Module 1 Test
+-
+ 
+Module 2 Test
+-
+ 
+Module 3 Test
+-
+ 
+Module 4 Test
+-
+ 
+Part 2 Summary Test
+-
+ 
+Python Essentials 2 total
+-
+ 
+Feedback, Final Test, and Exam Discount Code
+Final Test
+-
+ 
+Satisfaction Survey
+-
+ 
+PCAP-31-03 Discount Code Request Form
+ 
+Feedback, Final Test, and Exam Discount Code total
+-
+ 
+Course total
+97.30 %
+ 
+Overview report
+User report
+Course
+Home
+
+Grades
+
+Messages
+
+Calendar
+
+
+
+
+CLEANED TEXT PREVIEW: 28/03/2024,19:45grades:viewhttps://lms.netacad.com/grade/report/user/index.php?id=22307461/2home/ i'mlearning/ pcap-programmingessentialsinpython/ grades/ gradeadministration/ userreportnetacad,acisco...
+--- LOG END ---
+
+
+====================
+--- LOG START: DBMS Certificate.pdf (2026-01-11 20:09:21.990456) ---
+FULL TEXT:
+VENGALA AKHILAN
+Database Management System Part - 1
+The certificate is awarded to
+for successfully completing the course
+on April 28, 2025
+Issued on: Monday, April 28, 2025
+To verify, scan the QR code at https://verify.onwingspan.com
+
+CLEANED TEXT PREVIEW: vengalaakhilandatabasemanagementsystempart-1thecertificateisawardedtoforsuccessfullycompletingthecourseonapril28,2025issuedon:monday,april28,2025toverify,scantheqrcodeathttps://verify.onwingspan.com...
+--- LOG END ---
+
+
+====================
+--- LOG START: DBMS Certificate.pdf (2026-01-11 20:12:43.655151) ---
+FULL TEXT:
+VENGALA AKHILAN
+Database Management System Part - 1
+The certificate is awarded to
+for successfully completing the course
+on April 28, 2025
+Issued on: Monday, April 28, 2025
+To verify, scan the QR code at https://verify.onwingspan.com
+
+CLEANED TEXT PREVIEW: vengalaakhilandatabasemanagementsystempart-1thecertificateisawardedtoforsuccessfullycompletingthecourseonapril28,2025issuedon:monday,april28,2025toverify,scantheqrcodeathttps://verify.onwingspan.com...
+--- LOG END ---
+
+
+====================
+--- LOG START: 23P61A12C4_python_programming_mid1_PRA.pdf (2026-01-11 20:12:44.376488) ---
+FULL TEXT:
+28/03/2024, 19:45
+Grades: View
+https://lms.netacad.com/grade/report/user/index.php?id=2230746
+1/2
+Home / I'm Learning / PCAP - Programming Essentials in Python / Grades / Grade administration / User report
+NetAcad, a Cisco Corporate Social Responsibility program, is an IT skills and career building program available to learning institutions and individuals worldwide.
+Terms and Conditions
+Privacy Statement
+Cookie Policy
+PCAP - Programming Essentials in Python: View: User report
+User report - AKHILAN VENGALA
+Grade item
+Percentage
+Feedback
+PCAP - Programming Essentials in Python
+T&C and Welcome Survey
+Terms and Conditions [ACCEPT TO START THE COURSE]
+100.00 %
+ 
+T&C and Welcome Survey total
+ 
+Python Essentials 1
+Module 1 Test
+100.00 %
+ 
+Module 2 Test
+100.00 %
+ 
+Module 3 Test
+90.00 %
+ 
+Module 4 Test
+100.00 %
+ 
+Part 1 Summary Test
+97.00 %
+ 
+Python Essentials 1 total
+97.30 %
+ 
+Python Essentials 2
+Module 1 Test
+-
+ 
+Module 2 Test
+-
+ 
+Module 3 Test
+-
+ 
+Module 4 Test
+-
+ 
+Part 2 Summary Test
+-
+ 
+Python Essentials 2 total
+-
+ 
+Feedback, Final Test, and Exam Discount Code
+Final Test
+-
+ 
+Satisfaction Survey
+-
+ 
+PCAP-31-03 Discount Code Request Form
+ 
+Feedback, Final Test, and Exam Discount Code total
+-
+ 
+Course total
+97.30 %
+ 
+Overview report
+User report
+Course
+Home
+
+Grades
+
+Messages
+
+Calendar
+
+
+
+
+CLEANED TEXT PREVIEW: 28/03/2024,19:45grades:viewhttps://lms.netacad.com/grade/report/user/index.php?id=22307461/2home/ i'mlearning/ pcap-programmingessentialsinpython/ grades/ gradeadministration/ userreportnetacad,acisco...
+--- LOG END ---
+
+
+====================
+--- LOG START: 23P61A12C4_python_programming_mid1_PRA.pdf (2026-01-11 20:14:43.171720) ---
+FULL TEXT:
+28/03/2024, 19:45
+Grades: View
+https://lms.netacad.com/grade/report/user/index.php?id=2230746
+1/2
+Home / I'm Learning / PCAP - Programming Essentials in Python / Grades / Grade administration / User report
+NetAcad, a Cisco Corporate Social Responsibility program, is an IT skills and career building program available to learning institutions and individuals worldwide.
+Terms and Conditions
+Privacy Statement
+Cookie Policy
+PCAP - Programming Essentials in Python: View: User report
+User report - AKHILAN VENGALA
+Grade item
+Percentage
+Feedback
+PCAP - Programming Essentials in Python
+T&C and Welcome Survey
+Terms and Conditions [ACCEPT TO START THE COURSE]
+100.00 %
+ 
+T&C and Welcome Survey total
+ 
+Python Essentials 1
+Module 1 Test
+100.00 %
+ 
+Module 2 Test
+100.00 %
+ 
+Module 3 Test
+90.00 %
+ 
+Module 4 Test
+100.00 %
+ 
+Part 1 Summary Test
+97.00 %
+ 
+Python Essentials 1 total
+97.30 %
+ 
+Python Essentials 2
+Module 1 Test
+-
+ 
+Module 2 Test
+-
+ 
+Module 3 Test
+-
+ 
+Module 4 Test
+-
+ 
+Part 2 Summary Test
+-
+ 
+Python Essentials 2 total
+-
+ 
+Feedback, Final Test, and Exam Discount Code
+Final Test
+-
+ 
+Satisfaction Survey
+-
+ 
+PCAP-31-03 Discount Code Request Form
+ 
+Feedback, Final Test, and Exam Discount Code total
+-
+ 
+Course total
+97.30 %
+ 
+Overview report
+User report
+Course
+Home
+
+Grades
+
+Messages
+
+Calendar
+
+
+
+
+CLEANED TEXT PREVIEW: 28/03/2024,19:45grades:viewhttps://lms.netacad.com/grade/report/user/index.php?id=22307461/2home/ i'mlearning/ pcap-programmingessentialsinpython/ grades/ gradeadministration/ userreportnetacad,acisco...
+--- LOG END ---
+
+
+====================
+--- LOG START: DBMS Certificate.pdf (2026-01-11 20:14:44.699761) ---
+FULL TEXT:
+VENGALA AKHILAN
+Database Management System Part - 1
+The certificate is awarded to
+for successfully completing the course
+on April 28, 2025
+Issued on: Monday, April 28, 2025
+To verify, scan the QR code at https://verify.onwingspan.com
+
+CLEANED TEXT PREVIEW: vengalaakhilandatabasemanagementsystempart-1thecertificateisawardedtoforsuccessfullycompletingthecourseonapril28,2025issuedon:monday,april28,2025toverify,scantheqrcodeathttps://verify.onwingspan.com...
+--- LOG END ---
+
+
+====================
+--- LOG START: JavaScript_Essentials_1_certificate_23p61a12c4-vbithyd-ac-in_5a229115-43fd-477d-b6f2-9ba8bb91a37a.pdf (2026-01-11 20:15:05.339453) ---
+FULL TEXT:
+This certificate is awarded to
+AKHILAN VENGALA
+for successfully completing
+JavaScript Essentials 1
+offered by Vignana Bharathi Institute of Technology
+through the Cisco Networking Academy program.
+Kumbam Venkat Reddy
+Instructor
+Vignana Bharathi Institute of Technology
+09 Aug 2025
+Completion Date
+
+CLEANED TEXT PREVIEW: thiscertificateisawardedtoakhilanvengalaforsuccessfullycompletingjavascriptessentials1offeredbyvignanabharathiinstituteoftechnologythroughthecisconetworkingacademyprogram.kumbamvenkatreddyinstructorvi...
+--- LOG END ---
+
+
+====================
+--- LOG START: JavaScript_Essentials_1_certificate_23p61a12c4-vbithyd-ac-in_5a229115-43fd-477d-b6f2-9ba8bb91a37a.pdf (2026-01-11 20:15:35.463761) ---
+FULL TEXT:
+This certificate is awarded to
+AKHILAN VENGALA
+for successfully completing
+JavaScript Essentials 1
+offered by Vignana Bharathi Institute of Technology
+through the Cisco Networking Academy program.
+Kumbam Venkat Reddy
+Instructor
+Vignana Bharathi Institute of Technology
+09 Aug 2025
+Completion Date
+
+CLEANED TEXT PREVIEW: thiscertificateisawardedtoakhilanvengalaforsuccessfullycompletingjavascriptessentials1offeredbyvignanabharathiinstituteoftechnologythroughthecisconetworkingacademyprogram.kumbamvenkatreddyinstructorvi...
+--- LOG END ---
+
+
+====================
+--- LOG START: DBMS Certificate.pdf (2026-01-11 20:15:38.206408) ---
+FULL TEXT:
+VENGALA AKHILAN
+Database Management System Part - 1
+The certificate is awarded to
+for successfully completing the course
+on April 28, 2025
+Issued on: Monday, April 28, 2025
+To verify, scan the QR code at https://verify.onwingspan.com
+
+CLEANED TEXT PREVIEW: vengalaakhilandatabasemanagementsystempart-1thecertificateisawardedtoforsuccessfullycompletingthecourseonapril28,2025issuedon:monday,april28,2025toverify,scantheqrcodeathttps://verify.onwingspan.com...
+--- LOG END ---
