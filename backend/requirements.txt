@@ -7,3 +7,7 @@ opencv-python
 numpy
 pyzbar
 pymupdf
+scikit-image
+requests
+pyjwt
+beautifulsoup4
