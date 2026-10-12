@@ -1,13 +1,11 @@
 fastapi
-uvicorn
 python-multipart
 pillow
 pytesseract
-opencv-python
+opencv-python-headless
 numpy
 pyzbar
 pymupdf
-scikit-image
 requests
 pyjwt
 beautifulsoup4

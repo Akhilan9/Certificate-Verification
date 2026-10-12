@@ -1,0 +1,10 @@
+# Ignore local heavy and non-production files from Vercel function bundles
+backend/tesseract_installer.exe
+*.exe
+backend/uploads/**
+backend/ocr_log.txt
+backend/history.db
+backend/test_regex.py
+backend/venv/**
+backend/__pycache__/**
+*.db
