@@ -1,0 +1,22 @@
+# Python
+venv/
+*.pyc
+__pycache__/
+*.log
+ocr_log.txt
+*.exe
+history.db
+uploads/
+backend/history.db
+backend/uploads/
+backend/ocr_log.txt
+backend/tesseract_installer.exe
+
+# Node
+node_modules/
+package-lock.json
+
+# Environment
+.env
+.env.local
+.DS_Store

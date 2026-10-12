@@ -9,7 +9,7 @@ import clsx from 'clsx';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
 
-const API_URL = 'http://localhost:8001';
+const API_URL = import.meta.env.VITE_API_URL || '/api';
 
 function App() {
     const [files, setFiles] = useState([]);

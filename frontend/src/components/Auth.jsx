@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import { signInWithPopup } from 'firebase/auth';
 import { auth, googleProvider } from '../firebase';
 
-const API_URL = 'http://localhost:8001';
+const API_URL = import.meta.env.VITE_API_URL || '/api';
 
 const Auth = ({ onLogin, initialMode = true, onBack, theme, toggleTheme }) => {
     const [isLogin, setIsLogin] = useState(initialMode);

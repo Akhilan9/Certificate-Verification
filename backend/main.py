@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI, UploadFile, File, HTTPException, APIRouter
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
@@ -12,10 +12,14 @@ import os
 import uuid
 from datetime import datetime, timedelta
 
-# Create uploads directory
-os.makedirs("uploads", exist_ok=True)
+# Determine writable directory (Vercel serverless is read-only outside /tmp)
+IS_VERCEL = bool(os.getenv("VERCEL"))
+BASE_DIR = "/tmp" if IS_VERCEL else "."
+DB_PATH = os.path.join(BASE_DIR, "history.db")
+UPLOADS_DIR = os.path.join(BASE_DIR, "uploads")
+os.makedirs(UPLOADS_DIR, exist_ok=True)
 
-app = FastAPI()
+app = FastAPI(title="Certificate Verifier API")
 
 app.add_middleware(
     CORSMiddleware,
@@ -25,7 +29,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+app.mount("/uploads", StaticFiles(directory=UPLOADS_DIR), name="uploads")
+app.mount("/api/uploads", StaticFiles(directory=UPLOADS_DIR), name="api_uploads")
 
 # JWT Configuration
 SECRET_KEY = "super_secret_hackathon_key"
@@ -39,7 +44,7 @@ def create_access_token(data: dict, expires_delta: timedelta = timedelta(hours=2
 
 # Initialize SQLite Database
 def init_db():
-    conn = sqlite3.connect("history.db")
+    conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     c.execute('''CREATE TABLE IF NOT EXISTS verifications
                  (id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -75,9 +80,11 @@ class UserAuth(BaseModel):
 def hash_password(password: str) -> str:
     return hashlib.sha256(password.encode()).hexdigest()
 
-@app.post("/register")
+router = APIRouter()
+
+@router.post("/register")
 def register_user(user: UserAuth):
-    conn = sqlite3.connect("history.db")
+    conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     try:
         c.execute("INSERT INTO users (username, password_hash) VALUES (?, ?)", (user.username, hash_password(user.password)))
@@ -88,9 +95,9 @@ def register_user(user: UserAuth):
     conn.close()
     return {"message": "User created successfully"}
 
-@app.post("/login")
+@router.post("/login")
 def login_user(user: UserAuth):
-    conn = sqlite3.connect("history.db")
+    conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
     c.execute("SELECT id, username FROM users WHERE username = ? AND password_hash = ?", (user.username, hash_password(user.password)))
     row = c.fetchone()
@@ -103,21 +110,21 @@ def login_user(user: UserAuth):
 # Live stats
 _stats = {"total_processed": 0, "genuine": 0, "suspicious": 0, "unverified": 0, "start_time": time.time()}
 
-@app.get("/")
+@router.get("/")
 def read_root():
     return {"message": "Certificate Verifier API is running"}
 
-@app.get("/health")
+@router.get("/health")
 def health_check():
     return {"status": "ok", "uptime_seconds": round(time.time() - _stats["start_time"], 1)}
 
-@app.get("/stats")
+@router.get("/stats")
 def get_stats():
     return _stats
 
-@app.get("/history")
+@router.get("/history")
 def get_history():
-    conn = sqlite3.connect("history.db")
+    conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     c = conn.cursor()
     c.execute("SELECT * FROM verifications ORDER BY timestamp DESC LIMIT 100")
@@ -125,14 +132,14 @@ def get_history():
     conn.close()
     return [dict(ix) for ix in rows]
 
-@app.post("/verify")
+@router.post("/verify")
 async def verify_cert(file: UploadFile = File(...)):
     contents = await file.read()
     
     # Save file locally
     file_ext = os.path.splitext(file.filename)[1]
     safe_filename = f"{uuid.uuid4().hex}{file_ext}"
-    file_path = os.path.join("uploads", safe_filename)
+    file_path = os.path.join(UPLOADS_DIR, safe_filename)
     with open(file_path, "wb") as f:
         f.write(contents)
         
@@ -148,7 +155,7 @@ async def verify_cert(file: UploadFile = File(...)):
 
     # Save to history DB
     try:
-        conn = sqlite3.connect("history.db")
+        conn = sqlite3.connect(DB_PATH)
         c = conn.cursor()
         c.execute("INSERT INTO verifications (filename, file_path, status, platform, confidence_score, method) VALUES (?, ?, ?, ?, ?, ?)",
                   (file.filename, f"/uploads/{safe_filename}", status, result.get("platform", "Unknown"), result.get("confidence_score", 0), result.get("method", "Standard Analysis")))
@@ -158,6 +165,10 @@ async def verify_cert(file: UploadFile = File(...)):
         print(f"DB Error: {e}")
 
     return result
+
+# Register router at root and with /api prefix so rewrites and direct calls both work
+app.include_router(router)
+app.include_router(router, prefix="/api")
 
 if __name__ == "__main__":
     import uvicorn
