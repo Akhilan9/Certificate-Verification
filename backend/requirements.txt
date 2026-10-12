@@ -4,7 +4,6 @@ pillow
 pytesseract
 opencv-python-headless
 numpy
-pyzbar
 pymupdf
 requests
 pyjwt

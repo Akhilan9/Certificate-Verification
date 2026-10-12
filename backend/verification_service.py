@@ -1,14 +1,21 @@
 import re, cv2, numpy as np, pytesseract, os, fitz, difflib, json, io, requests, base64
-from pyzbar.pyzbar import decode
 from datetime import datetime
 from PIL import Image
 from bs4 import BeautifulSoup
+
+try:
+    from pyzbar.pyzbar import decode
+except Exception as e:
+    print(f"INFO: pyzbar/libzbar not available: {e}")
+    decode = None
 
 def setup_tesseract():
     paths = [
         r"C:\Program Files\Tesseract-OCR\tesseract.exe",
         r"C:\Program Files (x86)\Tesseract-OCR\tesseract.exe",
-        r"C:\Users\Abhi-Akhi\AppData\Local\Tesseract-OCR\tesseract.exe"
+        r"C:\Users\Abhi-Akhi\AppData\Local\Tesseract-OCR\tesseract.exe",
+        "/usr/bin/tesseract",
+        "/usr/local/bin/tesseract"
     ]
     for p in paths:
         if os.path.exists(p):
@@ -44,21 +51,49 @@ def convert_pdf_to_image(doc):
         return None
 
 def extract_qr_data(img):
-    attempts = [img]
+    results = []
+    if img is None:
+        return results
+
+    # 1. OpenCV built-in QRCodeDetector (works in headless environments without libzbar)
     try:
-        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        attempts.append(gray)
-        attempts.append(cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1])
-    except: pass
-    for a in attempts:
-        decoded = decode(a)
-        if decoded:
-            results = []
-            for obj in decoded:
-                try: results.append(obj.data.decode("utf-8"))
-                except: pass
-            if results: return results
-    return []
+        detector = cv2.QRCodeDetector()
+        retval, decoded_info, points, straight_qrcode = detector.detectAndDecodeMulti(img)
+        if retval:
+            for s in decoded_info:
+                if s and s not in results:
+                    results.append(s)
+        else:
+            data, bbox, _ = detector.detectAndDecode(img)
+            if data and data not in results:
+                results.append(data)
+    except Exception as e:
+        print(f"OpenCV QR decode error: {e}")
+
+    # 2. PyZbar decode if available
+    if decode is not None:
+        attempts = [img]
+        try:
+            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+            attempts.append(gray)
+            attempts.append(cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1])
+        except Exception:
+            pass
+        for a in attempts:
+            try:
+                decoded = decode(a)
+                if decoded:
+                    for obj in decoded:
+                        try:
+                            val = obj.data.decode("utf-8")
+                            if val and val not in results:
+                                results.append(val)
+                        except Exception:
+                            pass
+            except Exception:
+                pass
+
+    return results
 
 def extract_text_ocr(img):
     try:
